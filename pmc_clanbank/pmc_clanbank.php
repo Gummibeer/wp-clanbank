@@ -42,7 +42,7 @@ if ( !class_exists( 'pmc_clanbank' ) ) :
             endif;
 
             require_once('ext_userprofile.php');
-            $ext_userprofile = new pmc_ext_userprofile($this->table_name);
+            $this->ext_userprofile = new pmc_ext_userprofile($this->table_name);
         }
 
         public function initial_install()
